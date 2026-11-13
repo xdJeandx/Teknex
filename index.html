@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/LogoCircular.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Teknex - Gestión de Donaciones</title>
+</head>
+
+<body>
+
+    <header class="header-principal">
+        <div class="parte-arriba">
+            <a href="index.html"><img src="./imagenes/logo_teknex.png" alt="Logo Teknex" class="logo"></a>
+            <div class="textos-marca">
+                <h1>Teknex</h1>
+                <p>Gestión, recepción y entrega certificada de donaciones solidarias</p>
+            </div>
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">&#8801;</label>
+        <nav class="navegacion">
+            <ul>
+                <li><a class="activo" href="index.html">Quienes somos</a></li>
+                <li><a href="locales.html">Donde estamos</a></li>
+                <li><a href="transparencia.html">Transparencia</a></li>
+                <li><a href="formulario.html" class="btn-solicitar">Solicitar información</a></li>
+            </ul>
+            <label for="check" class="esconder-menu">&#215;</label>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <div class="hero-contenido">
+                <span class="hero-subtitulo">GESTIÓN INTEGRAL DE RESIDUOS</span>
+                <h2>Gestión, recepción y entrega certificada de donaciones solidarias</h2>
+                <p>Recogida, transporte, reciclaje y gestión certificada de ordenadores, portátiles, monitores,
+                    periféricos y residuos tecnológicos para empresas, autónomos y particulares.</p>
+
+                <div class="hero-etiquetas">
+                    <span>RAEE</span>
+                    <span>•</span>
+                    <span>Datos protegidos</span>
+                    <span>•</span>
+                    <span>Certificado homologado</span>
+                </div>
+
+                <div class="hero-botones">
+                    <a href="formulario.html" class="btn-hero-principal">Solicitar información</a>
+                    <a href="#preguntas" class="btn-hero-secundario">Ver preguntas frecuentes</a>
+                </div>
+            </div>
+
+            <div class="hero-imagen">
+                <img src="./imagenes/imagen_servicios.jpg" alt="Gestión de material informático">
+            </div>
+        </section>
+
+        <div class="dostarjeta">
+            <article class="primertarjeta">
+                <img src="./imagenes/prooceso.jpg" alt="Servicios que ofrecemos" width="250">
+                <h2>El Proceso de Teknex</h2>
+                <p>Teknex facilita el flujo operativo entre Donantes y Beneficiarios. Ambas partes comparten sus
+                    datos básicos de identificación para garantizar un registro transparente.</p>
+                <p>El departamento de recepción gestiona tanto las donaciones monetarias como las físicas.</p>
+            </article>
+            <article class="primertarjeta">
+                <img src="./imagenes/reparación.jpg" alt="Servicios que ofrecemos" width="250">
+                <h2>Personal y Reparación</h2>
+                <p>Nuestra estructura interna se divide en Recepción y Personal. El área de personal gestiona a los
+                    trabajadores registrados y a los Voluntarios.</p>
+                <p>Cuando una donación material llega en mal estado, se asigna directamente a un voluntario para
+                    poner a punto el aparato antes de entregarlo.</p>
+            </article>
+        </div>
+
+        <section class="tarjetagorda">
+            <h2>Aparatos que gestionamos</h2>
+            <ul class="cajita">
+                <li>Teléfonos</li>
+                <li>Monitores, televisores</li>
+                <li>Tablets, ebooks...</li>
+                <li>Ordenadores y portátiles</li>
+                <li>Consolas, impresoras y escáneres</li>
+                <li>Componentes (discos duros, RAM, gráficas...)</li>
+                <li>Periféricos (teclados, ratones, webcams)</li>
+                <li>Equipos de red (routers, switches, módems)</li>
+                <li>Audio y sonido (altavoces, auriculares)</li>
+                <li>Cámaras de fotos y vídeo</li>
+                <li>Smartwatches y wearables</li>
+                <li>Cables, cargadores y baterías</li>
+                <li>Pequeños electrodomésticos</li>
+                <li>Proyectores y equipos audiovisuales</li>
+                <li>Servidores y almacenamiento NAS</li>
+            </ul>
+        </section>
+
+        <section class="caja-blanca-servicio">
+            <h2>Cómo funciona el servicio</h2>
+            <div class="tarjeta4">
+                <div class="bloque4">
+                    <span class="numerocentrado">1</span>
+                    <p>El cliente contacta con Teknex e indica el tipo de residuo, volumen aproximado y ubicación.</p>
+                </div>
+                <div class="bloque4">
+                    <span class="numerocentrado">2</span>
+                    <p>El departamento revisa el caso y asesora sobre el procedimiento adecuado.</p>
+                </div>
+                <div class="bloque4">
+                    <span class="numerocentrado">3</span>
+                    <p>Se organiza la recogida con los medios necesarios y conforme a la normativa aplicable.</p>
+                </div>
+                <div class="bloque4">
+                    <span class="numerocentrado">4</span>
+                    <p>Se entrega la documentación correspondiente para acreditar la correcta gestión del residuo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="preguntas" class="tarjetagorda">
+            <h2>Preguntas Frecuentes</h2>
+
+            <div class="faq-contenedor">
+                <details class="faq-item">
+                    <summary>¿Para qué sirve el formulario de solicitud?</summary>
+                    <p>Te permite registrarte como donante, beneficiario o voluntario.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Es obligatorio aportar mi DNI y contraseña?</summary>
+                    <p>Sí, son necesarios para validar el perfil y asegurar la trazabilidad legal.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>¿Qué pasa si mi donación física está estropeada?</summary>
+                    <p>Puedes indicarlo en la solicitud y nuestro equipo asignará una tarea de reparación a un
+                        voluntario.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Teknex - Gestión de Donaciones. Todos los derechos reservados.</p>
+        <a href="/privacidad">Política de Privacidad</a>
+    </footer>
+</body>
+
+</html>

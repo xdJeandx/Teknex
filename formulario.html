@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/LogoCircular.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Teknex - Formulario de Registro</title>
+</head>
+
+<body>
+    <header>
+        <div class="parte-arriba">
+            <a href="index.html"><img src="./imagenes/logo_teknex.png" alt="Logo Teknex" class="logo"></a>
+            <div class="textos-marca">
+                <h1>Teknex</h1>
+                <p>Gestión, recepción y entrega certificada de donaciones solidarias</p>
+            </div>
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">&#8801;</label>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="index.html">Quienes somos</a></li>
+                <li><a href="locales.html">Donde estamos</a></li>
+                <li><a href="transparencia.html">Transparencia</a></li>
+                <li><a class="activo" href="formulario.html">Solicitar información</a></li>
+            </ul>
+            <label for="check" class="esconder-menu">&#215;</label>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Título fuera del header para evitar amontonamiento -->
+        <div class="cabecera-seccion">
+            <h2>Formulario Teknex</h2>
+            <p>Rellena el siguiente formulario para registrar tu solicitud o donación.</p>
+        </div>
+
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Datos donante</legend>
+
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Alex">
+                </div>
+
+                <div class="campo">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Perez">
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Número:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+34">
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="aaa@com.es">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Formulario de Donación</legend>
+
+                <p class="instruccion-radio">Selecciona el tipo de donación:</p>
+
+                <div class="opcion-radio">
+                    <input type="checkbox" id="monetaria" name="tipo_donacion_monetaria" value="monetaria">
+                    <label for="monetaria">Donación monetaria</label>
+                </div>
+
+                <div class="campo">
+                    <label for="monto">Monto / Cantidad (€):</label>
+                    <input type="number" id="monto" name="monto" min="1" step="0.01" placeholder="Ej. 20">
+                </div>
+
+                <div class="opcion-radio">
+                    <input type="checkbox" id="fisica" name="tipo_donacion_fisica" value="fisica">
+                    <label for="fisica">Donación de objeto físico</label>
+                </div>
+
+                <div class="campo">
+                    <label for="fisico">Tipo de objeto:</label>
+                    <select name="fisico" id="fisico">
+                        <option value="componentes">Componentes</option>
+                        <option value="telefono">Teléfono</option>
+                        <option value="portatil">Portátil</option>
+                        <option value="sobremesa">Sobremesa</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="objeto">¿Qué objeto o producto vas a donar?:</label>
+                    <input type="text" id="objeto" name="objeto" placeholder="Otros...">
+                </div>
+            </fieldset>
+
+            <div class="botones-form">
+                <input type="submit" value="Enviar Donación">
+                <input type="reset" value="Restablecer">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Teknex - Gestión de Donaciones. Todos los derechos reservados.</p>
+        <a href="/privacidad">Política de Privacidad</a>
+    </footer>
+
+</body>
+
+</html>
